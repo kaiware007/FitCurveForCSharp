@@ -14,7 +14,8 @@ download and install *FitCurve.unitypackage*
 
 ## Usage
 ```
-var points = new List<Vecotr3>() { new Vector3(0,0,0), new Vector3(0,10,10), new Vector3(10,-10,0), new Vector3(5,5,-4) };
+var points = new List<Vector3>() { new Vector3(0,0,0), new Vector3(5,10,10), new Vector3(10,-10,0), new Vector3(15,5,-4) };
 var maxErrpr = 5; // The smaller the number - the much closer spline should be
 var bezierPoints = FitCurveUtil.FitCurve(points, maxError, false);
+// bezierPoints = (0.0, 0.0, 0.0), (11.2, 22.3, 22.3), (3.8, -6.9, 8.7), (10.0, -10.0, 0.0), (10.0, -10.0, 0.0), (13.0, -11.5, -4.2), (13.3, 0.0, -2.7), (15.0, 5.0, -4.0)
 ```
